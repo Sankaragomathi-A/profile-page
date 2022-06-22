@@ -28,7 +28,14 @@ export default function Profile() {
       <Grid lg={5} md={5} sm={12} xs={12} item style={{ padding: "2rem 0" }}>
         <Typography variant="h6">Username</Typography>
       </Grid>
-      <Grid lg={7} md={7} sm={12} xs={12} item style={{ padding: "2rem 0",display:'flex' }}>
+      <Grid
+        lg={7}
+        md={7}
+        sm={12}
+        xs={12}
+        item
+        style={{ padding: "2rem 0", display: "flex" }}
+      >
         <Box
           style={{
             background: "#FFFFFF",
@@ -93,31 +100,46 @@ export default function Profile() {
         <Typography variant="h6">Your Photo</Typography>
         <Typography>This is will be displayed on your profile</Typography>
       </Grid>
-      <Grid lg={7} md={7} sm={12} xs={12} style={{ padding: "1rem 0",display:'flex',justifyContent:'flex-end' }}>
-        <Grid  style={{ display: "flex",justifyContent:'space-between',width:'100%',}}>
-        
-        <Grid  style={{ display: "flex",}}>
-          <Grid>
-            <img
-              src={img}
-              style={{
-                borderRadius: "50%",
-                width: "60px",
-                height: "58px",
-              }}
-            />
+      <Grid
+        lg={7}
+        md={7}
+        sm={12}
+        xs={12}
+        style={{
+          padding: "1rem 0",
+          display: "flex",
+          justifyContent: "flex-end",
+        }}
+      >
+        <Grid
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            width: "100%",
+          }}
+        >
+          <Grid style={{ display: "flex" }}>
+            <Grid>
+              <img
+                src={img}
+                style={{
+                  borderRadius: "50%",
+                  width: "60px",
+                  height: "58px",
+                }}
+              />
+            </Grid>
+            <Grid>
+              {/* sample */}
+              <Typography>Arun Kumar</Typography>
+              <Link href="#">@arunkumar6654.gmail.com</Link>
+            </Grid>
           </Grid>
+
           <Grid>
-            <Typography>Arun Kumar</Typography>
-            <Link href="#">@arunkumar6654.gmail.com</Link>
+            <Button variant="contained">Update Now</Button>
           </Grid>
         </Grid>
-
-        <Grid>
-        <Button variant="contained">Update Now</Button>
-      </Grid>
-
-      </Grid> 
       </Grid>
 
       {/* <Grid lg={4} md={4} sm={12} xs={12} style={{ padding: "1rem 0" }}>
